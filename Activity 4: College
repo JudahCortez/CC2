@@ -1,156 +1,194 @@
+
 package college;
 import java.util.Scanner;
-	
-	public class College {
-	
-	    public static void main(String[] args) {
-	        
-	        Scanner input = new Scanner(System.in);
-	          System.out.print("Enter your Department: ");
-	            String department = input.nextLine();
-	         
-	        if (department.equals("COA")) {
-	            System.out.println("Choose your academic program: ");
-	              System.out.println("Bachelor of Science in Accountancy");
-	              System.out.println("Bachelor of Science in Accounting Technology");
-	              System.out.println("Bachelor of Science in Management Accounting");
-	              System.out.println("Bachelor of Science in Forensic Accounting");
-	            String program1 = input.nextLine();
-	           if (program1.equals("Bachelor of Science in Accountancy")) {
-	               System.out.println("College of Accountancy");
-	                System.out.println("Course: Bachelor of Science in Accountancy (BSA)");
-	           } else if(program1.equals("Bachelor of Science in Accounting Technology")) {
-	               System.out.println("College of Accountancy");
-	                 System.out.println("Course: Bachelor of Science in Accounting Technology (BSAT)");
-	           } else if(program1.equals("Bachelor of Science in Management Accounting")) {
-	               System.out.println("College of Accountancy");
-	                 System.out.println("Course: Bachelor of Science in Management Accounting (BSMA)");
-	           } else if(program1.equals("Bachelor of Science in Forensic Accounting")) {
-	               System.out.println("College of Accountancy");
-	                 System.out.println("Course: Bachelor of Science in Forensic Accounting (BSFA)");
-	           } 
-             else 
-             {
-	               System.out.println("Unknown Program");
-	           }    
-	        } else if(department.equals("CEA")) {
-	            System.out.println("Choose your academic program: ");
-	              System.out.println("Bachelor of Science in Architechture");
-	              System.out.println("Bachelor of Science in Civil Engineering");
-	              System.out.println("Bachelor of Science in Electronics Engineering");
-	              System.out.println("Bachelor of Science in Environemtal and Sanitary Engineering");
-	            String program2 = input.nextLine();
-	           if (program2.equals("Bachelor of Science in Architechture")) {
-	               System.out.println("College of Engineering and Architecture");
-	                System.out.println("Course: Bachelor of Science in Architechture (BSA)");
-	           } else if(program2.equals("Bachelor of Science in Civil Engineering")) {
-	               System.out.println("College of Engineering and Architecture");
-	                System.out.println("Course: Bachelor of Science in Civil Engineering (BSCE)");
-	           } else if(program2.equals("Bachelor of Science in Electronics Engineering")) {
-	               System.out.println("College of Engineering and Architecture");
-	                System.out.println("Course: Bachelor of Science in Electronics Engineering (BSEE)");
-	           } else if(program2.equals("Bachelor of Science in Environemtal and Sanitary Engineering")) {
-	               System.out.println("College of Engineering and Architecture");
-	                System.out.println("Course: Bachelor of Science in Environemtal and Sanitary Engineering (BSES)");
-	           } 
-             else
-             {
-	               System.out.println("Unknown Program");
-	           }
-	        } else if(department.equals("CITCS")) {
-	            System.out.println("Choose your academic program: ");
-	              System.out.println("Bachelor of Science in Computer Science");
-	              System.out.println("Bachelor of Science in Information System");
-	              System.out.println("Bachelor of Science in Information Technology");
-	              System.out.println("Associate in Computer Technology");
-	            String program2 = input.nextLine();
-	           if (program2.equals("Bachelor of Science in Computer Science")) {
-	               System.out.println("College of Information Technology and Computer Science");
-	               System.out.println("Course: Bachelor of Science in Computer Science (BSCS)");
-	           } else if(program2.equals("Bachelor of Science in Information System")) {
-	               System.out.println("College of Information Technology and Computer Science");
-	               System.out.println("Course: Bachelor of Science in Information System (BSIS)");
-	           } else if(program2.equals("Bachelor of Science in Information Technology")) {
-	                System.out.println("College of Information Technology and Computer Science");
-	                System.out.println("Course: Bachelor of Science in Information Technology (BSIT)");
-	           } else if(program2.equals("Associate in Computer Technology")) {
-	               System.out.println("College of Information Technology and Computer Science");
-	                System.out.println("Course: Associate in Computer Technology (ACT)"); 
-	           } 
-             else 
-             {
-	               System.out.println("Unknown Program");
-	           }
-	        } else if (department.equals("CTE")) {
-	            System.out.println("Choose your academic program: ");
-	              System.out.println("Bachelor of Science in Elemetary Education - General");
-	              System.out.println("Bachelor of Science in Elemetary Education");
-	              System.out.println("Bachelor of Science in Secondary Education");
-	            String program2 = input.nextLine();
-	           if (program2.equals("Bachelor of Science in Elemetary Education - General")) {
-	               System.out.println("Bachelor of Science in Elemetary Education");
-	                System.out.println("Course: Bachelor of Science in Elemetary Education - General (BSEE)-G");
-	           } else if(program2.equals("Bachelor of Science in Elemetary Education")) {
-	               System.out.println("College of Teacher Education");
-	                System.out.println("Course: Bachelor of Science in Elemetary Education (BSEE)");
-	           } else if(program2.equals("Bachelor of Science in Secondary Education")) {
-	               System.out.println("College of Teacher Education");
-	                System.out.println("Course: Bachelor of Science in Secondary Education (BSSE)");
-	           } 
-             else 
-             {
-	               System.out.println("Unknown Program");
-	           }
-	        } else if (department.equals("CAS")) {
-	            System.out.println("Choose your academic program: ");
-	              System.out.println("Bachelor of Arts in English");
-	              System.out.println("Bachelor of Arts in Political Science");
-	              System.out.println("Bachelor of Arts in Communication");
-	              System.out.println("Bachelor of Science in Pyschology");
-	            String program2 = input.nextLine();
-	           if (program2.equals("Bachelor of Arts in Englis")) {
-	               System.out.println("College of Arts and Science");
-	                System.out.println("Course: Bachelor of Arts in English (BAE)");
-	           } else if(program2.equals("Bachelor of Arts in Political Science")) {
-	               System.out.println("College of Arts and Science");
-	                System.out.println("Course: Bachelor of Arts in Political Science (BAPS)");
-	           } else if(program2.equals("Bachelor of Arts in Communication")) {
-	               System.out.println("College of Arts and Science");
-	                System.out.println("Course: Bachelor of Arts in Communication (BAC)");
-	               
-	           } else if(program2.equals("Bachelor of Science in Pyschology")) {
-	               System.out.println("College of Arts and Science");
-	                System.out.println("Course: Bachelor of Science in Pyschology (BST)");
-	           } 
-             else 
-             {
-	               System.out.println("Unknown Program");
-	           }
-	            
-	        } else if (department.equals("CBA")) {
-	            System.out.println("Choose your academic program: ");
-	              System.out.println("Bachelor of Science in Business Administration");
-	              System.out.println("Bachelor of Science in Entrepreneurship");
-	              System.out.println("Bachelor of Science in Office Administration");
-	            String program2 = input.nextLine();
-	           if (program2.equals("Bachelor of Science in Business Administration")) {
-	               System.out.println("College of Business Administration");
-	                System.out.println("Course: Bachelor of Science in Business Administration (BSBA)");
-	           } else if(program2.equals("Bachelor of Science in Entrepreneurship")) {
-	               System.out.println("College of Business Administration");
-	                System.out.println("Course: Bachelor of Science in Entrepreneurship (BSE)");
-	           } else if(program2.equals("Bachelor of Science in Office Administration")) {
-	               System.out.println("College of Business Administration");
-	                System.out.println("Course: Bachelor of Science in Office Administration (BSOA)");
-	           } 
-             else 
-             {
-	               System.out.println("Unknown Program");
-	           } 
-	        } 
-          else
-          {
-	            System.out.println("Unknown Deparment");
-	        }
-	    }
-	}
+
+class College {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+         System.out.print("Enter the College where you belong: ");
+        String college = input.nextLine();
+        
+          if (college.equals("COA") && college.equals("College of Accountany")) {
+            System.out.println(college.toUpperCase());
+            System.out.println("Enter Your Academic Program: ");
+            String program1 = input.nextLine();          
+        
+            if (program1.equals("BSA") && program1.equals("Bachelor of Science in Accountancy")) {
+               
+               System.out.println("College of Accountancy");
+               System.out.println(program1.toUpperCase());
+               System.out.println("Bachelor of Science in Accountancy (BSA)");
+               
+           } else if (program1.equals("BSAT") && program1.equals("Bachelor of Science in Accounting Technology")) {
+               System.out.println("College of Accountancy");
+               System.out.println(program1.toUpperCase());
+               System.out.println("Bachelor of Science in Accounting Technology (BSAT)");
+               
+           } else if (program1.equals("BSMA") && program1.equals("Bachelor of Science in Management Accounting")) {
+               System.out.println("College of Accountancy");
+               System.out.println(program1.toUpperCase());
+               System.out.println("Bachelor of Science in Management Accounting (BSMA)");
+               
+           } else if (program1.equals("BSFA") && program1.equals("Bachelor of Science in Forensic Accounting")) {
+               System.out.println("College of Accountancy");
+               System.out.println(program1.toUpperCase());
+               System.out.println("Bachelor of Science in Forensic Accounting (BSFA)");
+               
+           } else {
+               System.out.println("Error: The Program you Input is Unknown");
+         
+           }        
+        }else if(college.equals("CEA") && college.equals("College of Engeneering and Architecture")) {
+            System.out.println(college.toUpperCase());
+            System.out.println("Enter Your Academic Program: ");
+            
+            String program2 = input.nextLine();
+             
+           if (program2.equals("BSA") && program2.equals("Bachelor of Science in Architechture")) {
+               System.out.println("College of Engineering and Architecture");
+               System.out.println("Bachelor of Science in Architechture (BSA)");
+               
+           } else if (program2.equals("BSCE") && program2.equals("Bachelor of Science in Civil Engineering")) {
+               System.out.println("College of Engineering and Architecture");
+               System.out.println("Bachelor of Science in Civil Engineering (BSCE)");
+               System.out.println(program2.toUpperCase());
+               
+           } else if (program2.equals("BSEE") && program2.equals("Bachelor of Science in Electronics Engineering")) {
+               System.out.println("College of Engineering and Architecture");
+               System.out.println("Bachelor of Science in Electronics Engineering (BSEE)");
+               System.out.println(program2.toUpperCase());
+               
+           } else if (program2.equals("BSES") && program2.equals("Bachelor of Science in Environemtal and Sanitary Engineering")) {
+               System.out.println("College of Engineering and Architecture");
+               System.out.println("Bachelor of Science in Environemtal and Sanitary Engineering (BSES)");
+               System.out.println(program2.toUpperCase());
+               
+           } else {
+               System.out.println("Error: The Program you Input is Unknown");
+           }
+            
+        } else if(college.equals("CITCS") && college.equals("College of Information and Computer Science")) {
+            
+            System.out.println("Enter Your Academic Program: ");
+            System.out.println(college.toUpperCase());
+            String program3 = input.nextLine();
+             
+            if (program3.equals("BSCS") && program3.equals("Bachelor of Science in Computer Science")) {
+               System.out.println("College of Information Technology and Computer Science");
+               System.out.println("Bachelor of Science in Computer Science (BSCS)");
+               System.out.println(program3.toUpperCase());
+               
+           } else if (program3.equals("BSIS") && program3.equals("Bachelor of Science in Information System")) {
+               System.out.println("College of Information Technology and Computer Science");
+               System.out.println("Bachelor of Science in Information System (BSIS)");
+               System.out.println(program3.toUpperCase());
+               
+           } else if (program3.equals("BSIT") && program3.equals("Bachelor of Science in Information Technology")) {
+               System.out.println("College of Information Technology and Computer Science");
+               System.out.println("Bachelor of Science in Information Technology (BSIT)");
+               System.out.println(program3.toUpperCase());
+               
+           } else if (program3.equals("ACT") && program3.equals("Associate in Computer Technology")) {
+               System.out.println("College of Information Technology and Computer Science");
+               System.out.println("Associate in Computer Technology (ACT)");
+               System.out.println(program3.toUpperCase());
+               
+           } else {
+               System.out.println("Error: The Program you Input is Unknown");
+           }
+            
+        } else if (college.equals("CTE") && college.equals("College of Teacher Education")) {
+            
+            System.out.println("Enter Your Academic Program: ");
+            System.out.println(college.toUpperCase());
+            String program4 = input.nextLine();
+             
+           if (program4.equals("BSEE-G") && program4.equals("Bachelor of Science in Elemetary Education - General")) {
+               System.out.println("College of Teacher Education");
+               System.out.println("Bachelor of Science in Elemetary Education - General (BSEE)-G");
+               System.out.println(program4.toUpperCase());
+               
+           } else if (program4.equals("BSEE") && program4.equals("Bachelor of Science in Elemetary Education")) {
+               System.out.println("College of Teacher Education");
+               System.out.println("Bachelor of Science in Elemetary Education (BSEE)");
+               System.out.println(program4.toUpperCase());
+               
+           } else if (program4.equals("BSSE") && program4.equals("Bachelor of Science in Secondary Education")) {
+               System.out.println("College of Teacher Education");
+               System.out.println("Bachelor of Science in Secondary Education (BSSE)");
+               System.out.println(program4.toUpperCase());
+               
+           } else {
+               System.out.println("Error: The Program you Input is Unknown");
+           }
+            
+        } else if (college.equals("CAS") && college.equals("College of Arts and Sciences")) {
+            
+            System.out.println("Enter Your Academic Program: ");
+            System.out.println(college.toUpperCase());
+            String program5 = input.nextLine();
+             
+           if (program5.equals("BAE") && program5.equals("Bachelor of Arts in English")) {
+               System.out.println("College of Arts and Science");
+               System.out.println("Bachelor of Arts in English (BAE)");
+               System.out.println(program5.toUpperCase());
+               
+           } else if (program5.equals("BAPS") && program5.equals("Bachelor of Arts in Political Science")) {
+               System.out.println("College of Arts and Science");
+               System.out.println("Bachelor of Arts in Political Science (BAPS)");
+               
+               
+           } else if (program5.equals("BAC") && program5.equals("Bachelor of Arts in Communication")) {
+               System.out.println("College of Arts and Science");
+               System.out.println("Bachelor of Arts in Communication (BAC)");
+               
+               
+           } else if (program5.equalsIgnoreCase("BST") && program5.equals("Bachelor of Science in Pyschology")) {
+               System.out.println("College of Arts and Science");
+               System.out.println("Bachelor of Science in Pyschology (BST)");
+              
+           } else {
+               System.out.println("Error: The Program you Input is Unknown");
+           }
+            
+        } else if (college.equals("CBA") && college.equals("College of Business Administration")) {
+            
+            System.out.println("Enter Your Academic Program: ");
+            String program6 = input.nextLine();
+             
+           if (program6.equals("BSBA") && program6.equals("Bachelor of Science in Business Administration")) {
+               System.out.println("College of Business Administration");
+               System.out.println("Bachelor of Science in Business Administration (BSBA)");
+              
+           } else if (program6.equals("BSE") && program6.equals("Bachelor of Science in Entrepreneurship")) {
+               System.out.println("College of Business Administration");
+               System.out.println("Bachelor of Science in Entrepreneurship (BSE)");
+               
+           } else if (program6.equals("BSOA") && program6.equals("Bachelor of Science in Office Administration")) {
+               System.out.println("College of Business Administration");
+               System.out.println("Bachelor of Science in Office Administration (BSOA)");
+               
+           } else {
+               System.out.println("Error: The Program you Input is Unknown");
+           }
+            
+        } else {
+            System.out.println("Error: The College you Input is Unknown");
+        }
+        }
+    }
+
+
+
+       
+  
+    
+
+    
+
+
