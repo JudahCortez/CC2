@@ -1,0 +1,44 @@
+
+package numberguess;
+	import java.util.Scanner;
+	
+	public class NumberGuess {
+	
+	    public static void main(String[] args) {
+	        
+	        Scanner input = new Scanner(System.in); 
+	          System.out.println("Guess the Number (1 - 1000): ");    
+	          int userGuess = input.nextInt();
+	            System.out.println("Answer: " + userGuess);
+	        
+          System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n");
+	   
+	        System.out.println("Guess the Number from 1 to 1000");
+	          System.out.print("Enter what you Guess: ");
+	          int guessuser = input.nextInt();
+	        
+	        if (userGuess == guessUser) {
+	            System.out.println("Correct! The number is " + userGuess);
+	        } 
+          else 
+          {
+          while (userGuess != guessUser) {
+	            if (userGuess >= guessUser) {
+	                System.out.println("Hint: The number is lower");
+	            } 
+              else if(userGuess <= guessUser) {
+	                System.out.println("Hint: The number is higher");
+	            }
+	            if (userGuess % 2 == 0) {
+	                System.out.println("Hint: The number is even");
+	            } 
+              else 
+              {
+	                System.out.println("Hint: The number is odd");
+	            }
+                  System.out.print("Wrong Number! Guess the number again: ");
+	                userGuess = input.nextInt();
+	            }
+	        } 
+	    }
+	}
