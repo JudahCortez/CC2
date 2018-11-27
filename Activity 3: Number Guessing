@@ -1,44 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package gssgm;
+import java.util.*;
+/**
+ *
+ * @author CC2_1D-22
+ */
+public class Gssgm {
 
-package numberguess;
-	import java.util.Scanner;
-	
-	public class NumberGuess {
-	
-	    public static void main(String[] args) {
-	        
-	        Scanner input = new Scanner(System.in); 
-	          System.out.println("Guess the Number (1 - 1000): ");    
-	          int userGuess = input.nextInt();
-	            System.out.println("Answer: " + userGuess);
-	        
-          System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n");
-	   
-	        System.out.println("Guess the Number from 1 to 1000");
-	          System.out.print("Enter what you Guess: ");
-	          int guessuser = input.nextInt();
-	        
-	        if (userGuess == guessUser) {
-	            System.out.println("Correct! The number is " + userGuess);
-	        } 
-          else 
-          {
-          while (userGuess != guessUser) {
-	            if (userGuess >= guessUser) {
-	                System.out.println("Hint: The number is lower");
-	            } 
-              else if(userGuess <= guessUser) {
-	                System.out.println("Hint: The number is higher");
-	            }
-	            if (userGuess % 2 == 0) {
-	                System.out.println("Hint: The number is even");
-	            } 
-              else 
-              {
-	                System.out.println("Hint: The number is odd");
-	            }
-                  System.out.print("Wrong Number! Guess the number again: ");
-	                userGuess = input.nextInt();
-	            }
-	        } 
-	    }
-	}
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner guess = new Scanner(System.in);
+    
+        int correctnumber = 7;
+        int answer;
+        
+        do{
+        System.out.println("Guess the Correct Number that was put here on the Program"
+                + "\nYour Range is 1-1000");
+        System.out.println("\n\n\n\n\n\n\n\n\n\n");
+        System.out.println("What is your Guess?:");
+        answer = guess.nextInt();
+              
+        if (answer>correctnumber & answer%2==0){
+            System.out.println("Wrong Number.Higher Number Pls");
+            System.out.println("It's a Even Number");
+        }
+        else if(answer<correctnumber){
+            System.out.println("Wrong Number.Its Odd");
+            System.out.println("Its a Odd Number");
+        }
+        else {
+            System.out.println("CONGRATS. YOU GUESSED THE CORRECT NUMBER!");
+            }
+        }
+        while(correctnumber!=answer);{
+            }
+    }
+}
+        
+
+        
+        
+            
+           
+        
+ 
