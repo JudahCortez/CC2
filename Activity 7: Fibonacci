@@ -19,7 +19,7 @@ public class Fibo {
     
     static void display(){
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the the Fibonacci Number: ");
+        System.out.print("Enter Fibonacci Number: ");
         int n = input.nextInt();
         
         for (int i = 0; i <= n; i++) {
